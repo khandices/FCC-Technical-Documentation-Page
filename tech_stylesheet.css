@@ -1,0 +1,73 @@
+#navbar {
+position: fixed;
+min-width: 290px;
+top: 0px;
+left: 0px;
+width: 300px;
+height: 100%;
+border-right: 5px double;
+}
+#navbar ul {
+padding: 0px;
+}
+
+#navbar li {
+border-top: 1px solid;
+list-style: none;
+position: relative;
+width: 100%;
+}
+
+#navbar a {
+display: block;
+padding: 10px 30px;
+text-decoration: none;
+cursor: pointer;
+color: black;
+font-size: 20px;
+}
+
+#navbar a:hover {
+background-color: #f2f2f2;
+}
+
+#main-doc {
+position: absolute;
+margin-left: 310px;
+padding: 20px;
+margin-bottom: 110px;
+}
+
+header {
+font-size: 30px;
+}
+
+nav header {
+padding-left: 15px;
+}
+
+section article {
+font-size: 1.1em;
+margin: 17px;
+}
+code {
+display: block;
+position: relative;
+word-break: normal;
+word-wrap: normal;
+line-height: 2;
+background-color: #f2f2f2;
+padding: 12px;
+margin: 10px;
+border-radius: 2px;
+font-size: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+#navbar ul {
+height: 300px;
+}
+#main-doc {
+margin-left: -10px;
+}
+}
