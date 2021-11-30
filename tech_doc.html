@@ -18,10 +18,10 @@
             <li><a class="nav-link" href="#Variables">Variables</a></li>
             <li><a class="nav-link" href="#Numbers">Numbers</a></li>
             <li><a class="nav-link" href="#Strings">Strings</a></li>
-            <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+            <li><a class="nav-link" href="#Lists">Lists</a></li>
+            <li><a class="nav-link" href="#Dictionaries">Dictionaries</a></li>
             <li><a class="nav-link" href="#Loops">Loops</a></li>
             <li><a class="nav-link" href="#Conditionals">Conditionals</a></li>
-            <li><a class="nav-link" href="#Dictionaries">Dictionaries</a></li>
             <li><a class="nav-link" href="#Defining_Functions">Defining Functions</a></li>
             <li><a class="nav-link" href="#References"> References</a></li>
         </ul>
@@ -42,6 +42,7 @@
 
                     <li>No variable or argument declarations are necessary.</li>
                 </ul>
+                </p>
             </article>
         </section>
 
@@ -50,10 +51,12 @@
             <article>
                 <p>To create your first Python code, open your own scrachpad and write your 'Hello World' Python code:
                     <code> print('Hello World') </code>
+                </p>
                 <p>For this 'Hello World' code, a print() statement is followed by a string. In Python, print() is a
                     function that "prints" the argument that is held within the two parenthesis. The argument, in this case
                     a string, is contained within the () and is what will be shown on the screen after running the code. We
                     will discuss more about strings later on in this document.
+                </p>
             </article>
         </section>
 
@@ -76,6 +79,8 @@
                     <li> Dictionary </li>
                     <code> dict1 = {"name": "Khan", "age": 27}</code>
                 </ul>
+                </p>
+            </article>
         <section class="main-section" id="Variables">
             <header>Variables</header>
             <article>
@@ -94,6 +99,7 @@
                     orange = 20
                 </code>
                 Now orange is assigned to 20.
+                </p>
             </article>
         </section>
 
@@ -106,17 +112,19 @@
                     <li> Integers</li>
                     <li> Float </li>
                 </ul>
+                </p>
                 <p>Integers are whole numbers, meaning that they are not superseded by a decimal point. In Python, an
                     integer is denoted by the word <b>int</b>.
                     Floats are numbers comprised of decimal points. Both integers and floats can be utilized with operators
                     to complete math problems.
+                </p>
             </article>
         </section>
 
         <section class="main-section" id="Strings">
             <header>Strings</header>
             <article>
-                <p>In Python, words as datatypes are called strings or <b>str</b>. Strings are enclosed between quotations.
+                <p>In Python, words as datatypes are called strings or <b>str</b>. Strings are enclosed between quotations. </p>
                 <code>
                     str1 = "This is a string"
                 </code>
@@ -124,17 +132,33 @@
         </section>
 
 
-        <section class="main-section" id="Arrays">
-            <header>Arrays</header>
+        <section class="main-section" id="lists">
+            <header>Lists</header>
             <article>
                 <p>Python knows a number of compound data types, used to group together other values. The most versatile is
-                    the list, which
-                    can be written as a list of comma-separated values (items) between square brackets. Lists might contain
-                    items of
-                    different types, but usually the items all have the same type.
-                    <code> </code>
+                    the list (also called an array), which can be written as a list of comma-separated elements between square brackets. Lists are indexed by a range of numbers that begins with 0. So for example, the first element in the list will have an index of 0. Lists might contain
+                    items of different types, but typically the items all have the same type.
+                    <code> 
+                        list_1 = [item1, item2, item3, item4]
+                    </code>
+                    As mentioned above, a list indexes the elements within it. In the list_1 above, the item2 is at index 1.
+                </p>
             </article>
         </section>
+
+        <section class="main-section" id="Dictionaries">
+            <header>Dictionaries</header>
+            <article>
+                <p>Another useful data type built into Python is the dictionary. Dictionaries are sometimes
+                found in other languages as “associative arrays”. Unlike lists, which are indexed by a
+                range of numbers, dictionaries are indexed by <b>keys</b>, which can be any immutable type; strings and numbers can always be
+                keys. A dictionary syntax is enclosed with curly brackets and its key and value pairs are separated with a colon. Each key,value pair within a dictionary is separated by a comma.
+                <code>
+                    dict_1 = {"key1": "orange", "key2": "apple", "key3": "banana"}
+                </code>
+            </article>
+        </section>
+
 
         <section class="main-section" id="Loops">
             <header>Loops</header>
@@ -150,12 +174,6 @@
             </article>
         </section>
 
-        <section class="main-section" id="Dictionaries">
-            <header>Dictionaries</header>
-            <article>
-                <p>
-            </article>
-        </section>
 
         <section class="main-section" id="Defining_Functions">
             <header>Defining Functions</header>
@@ -167,7 +185,8 @@
         <section class="main-section" id="References">
             <header>References</header>
             <p>All the documentation in this page is taken from <a
-                    href="https://docs.python.org/3/tutorial/index.html">Python Docs</a></p>
+                    href="https://docs.python.org/3/tutorial/index.html" class="python-docs"><b>Python Docs</b></a>
+            </p>
         </section>
     </main>
 
