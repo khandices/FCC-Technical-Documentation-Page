@@ -9,157 +9,168 @@
     <title>Python Documentation Page</title>
 </head>
 <body>
-    
+    <nav id="navbar">
+        <header> Intro to Python</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Numbers">Numbers</a></li>
+            <li><a class="nav-link" href="#Strings">Strings</a></li>
+            <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+            <li><a class="nav-link" href="#Loops">Loops</a></li>
+            <li><a class="nav-link" href="#Conditionals">Conditionals</a></li>
+            <li><a class="nav-link" href="#Dictionaries">Dictionaries</a></li>
+            <li><a class="nav-link" href="#Defining_Functions">Defining Functions</a></li>
+            <li><a class="nav-link" href="#References"> References</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p> Python is a cross-platform, object-oriented, high-level programming language. It is a great programming
+                    language to learn for beginners as it is simple to use, even though it uses very-high level data storing
+                    types, such as arrays and dictionaries. Python is written in a way that is easy to read and more compact
+                    than other similar program languages. This is due to the fact that Python includes the following
+                    characteristics:
+                <ul>
+                    <li>The high-level data types allow you to express complex operations in a single statement;</li>
 
-<nav id="navbar">
-    <header> Intro to Python</header>
-    <ul>
-        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-        <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
-        <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
-        <li><a class="nav-link" href="#Numbers">Numbers</a></li>
-        <li><a class="nav-link" href="#Strings">Strings</a></li>
-        <li><a class="nav-link" href="#Variables">Variables</a></li>
-        <li><a class="nav-link" href="#Lists">Lists</a></li>
-        <li><a class="nav-link" href="#Loops">Loops</a></li>
-        <li><a class="nav-link" href="#Conditionals">Conditionals</a></li>
-        <li><a class="nav-link" href="#Dictionaries">Dictionaries</a></li>
-        <li><a class="nav-link" href="#Defining_Functions">Defining Functions</a></li>
-        <li><a class="nav-link" href="#References"> References</a></li>
-    </ul>
-</nav>
-<main id="main-doc">
-    <section class="main-section" id="Introduction">
-        <header>Introduction</header>
-        <article>
-            <p> Python is a cross-platform, object-oriented, high-level programming language. It is a great programming
-                language to learn for beginners as it is simple to use, even though it uses very-high level data storing
-                types, such as arrays and dictionaries. Python is written in a way that is easy to read and more compact
-                than other similar program languages. This is due to the fact that Python includes the following
-                characteristics:
-            <ul>
-                <li>The high-level data types allow you to express complex operations in a single statement;</li>
+                    <li>Statement grouping is done by indentation instead of beginning and ending brackets;</li>
 
-                <li>Statement grouping is done by indentation instead of beginning and ending brackets;</li>
+                    <li>No variable or argument declarations are necessary.</li>
+                </ul>
+            </article>
+        </section>
 
-                <li>No variable or argument declarations are necessary.</li>
-            </ul>
-        </article>
-    </section>
+        <section class="main-section" id="Hello_World">
+            <header>Hello World</header>
+            <article>
+                <p>To create your first Python code, open your own scrachpad and write your 'Hello World' Python code:
+                    <code> print('Hello World') </code>
+                <p>For this 'Hello World' code, a print() statement is followed by a string. In Python, print() is a
+                    function that "prints" the argument that is held within the two parenthesis. The argument, in this case
+                    a string, is contained within the () and is what will be shown on the screen after running the code. We
+                    will discuss more about strings later on in this document.
+            </article>
+        </section>
 
-    <section class="main-section" id="Hello_World">
-        <header>Hello World</header>
-        <article>
-            <p>To create your first Python code, open your own scrachpad and write your 'Hello World' Python code:
-                <code> print('Hello World') </code>
-            <p>For this 'Hello World' code, a print() statement is followed by a string. In Python, print() is a
-                function that "prints" the argument that is held within the two parenthesis. The argument, in this case
-                a string, is contained within the () and is what will be shown on the screen after running the code. We
-                will discuss more about strings later on in this document.
-        </article>
-    </section>
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <article>
+                <p>Within Python there are several different data types. I will discuss some of the most commonly used
+                    within Python.
+                <ul>
+                    <li> Float </li>
+                    <code> x = 4.73 </code>
+                    <li> Intergers</li>
+                    <code> x = 8 </code>
+                    <li> String</li>
+                    <code> x = "Cat" </code>
+                    <li> Boolean </li>
+                    <code> x = true </code>
+                    <li> List </li>
+                    <code> list1 = [1, 2, 3, 4] </code>
+                    <li> Dictionary </li>
+                    <code> dict1 = {"name": "Khan", "age": 27}</code>
+                </ul>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <p>As you can see, there are variables that have data assigned to them utilizing the "=" sign. It's important
+                to note that this does not mean the variable is equal to the data, but simply assigned to it. In
+                Python, it is simple to reassign new data to a variable. 
+                <br>
+                For example, say you already assigned a variable named orange to the integer 6:
+                <code>
+                    orange = 6
+                </code>
+                But you would like to change the number orange is assigned to. You would simply reassign it by setting orange equal to the new integer (or other value):
+                <code>
+                    orange = 6
+                    <br>
+                    orange = 20
+                </code>
+                Now orange is assigned to 20.
+            </article>
+        </section>
 
-    <section class="main-section" id="Data_Types">
-        <header>Data Types</header>
-        <article>
-            <p>Within Python there are several different data types. I will discuss some of the most commonly used
-                within Python.
-            <ul>
-                <li> Float </li>
-                <code> x = 4.73 </code>
-                <li> Intergers</li>
-                <code> x = 8 </code>
-                <li> String</li>
-                <code> x = "Cat" </code>
-                <li> Boolean </li>
-                <code> x = true </code>
-                <li> List </li>
-                <code> list1 = [1, 2, 3, 4] </code>
-                <li> Dictionary </li>
-                <code> dict1 = {"name": "Khan", "age": 27}</code>
-            </ul>
-            <p>As you can see, there are variables that have data assigned to them utilizing the = sign. It's important
-                to note that this does not mean the variable is equals to the data, but simply assigned to it. In
-                Python, it is simple to reassign new data to a variable.
-        </article>
-    </section>
+        <section class="main-section" id="Numbers">
+            <header>Numbers</header>
+            <article>
+                <p>
+                    Seen above, you learned that there are two types of number data types in Python:
+                <ul>
+                    <li> Integers</li>
+                    <li> Float </li>
+                </ul>
+                <p>Integers are whole numbers, meaning that they are not superseded by a decimal point. In Python, an
+                    integer is denoted by the word <b>int</b>.
+                    Floats are numbers comprised of decimal points. Both integers and floats can be utilized with operators
+                    to complete math problems.
+            </article>
+        </section>
 
-    <section class="main-section" id="Numbers">
-        <header>Numbers</header>
-        <article>
-            <p>
-                Seen above, you learned that there are two types of number data types in Python:
-            <ul>
-                <li> Integers</li>
-                <li> Float </li>
-            </ul>
-            <p>Integers are whole numbers, meaning that they are not superseded by a decimal point. In Python, an
-                integer is denoted by the word <b>int</b>.
-                Floats are numbers comprised of decimail points. Both integers and floats can be utilized with operators
-                to complete math problems.
-        </article>
-    </section>
+        <section class="main-section" id="Strings">
+            <header>Strings</header>
+            <article>
+                <p>In Python, words as datatypes are called strings or <b>str</b>. Strings are enclosed between quotations.
+                <code>
+                    str1 = "This is a string"
+                </code>
+            </article>
+        </section>
 
-    <section class="main-section" id="Strings">
-        <header>Strings</header>
-        <article>
-            <p>In Python, words as datatypes are called strings or <b>str</b>. Strings are enclosed between quotations.
-        </article>
-    </section>
 
-    <section class="main-section" id="Variables">
-        <header>Variables</header>
-        <article>
-            <p>
-        </article>
-    </section>
+        <section class="main-section" id="Arrays">
+            <header>Arrays</header>
+            <article>
+                <p>Python knows a number of compound data types, used to group together other values. The most versatile is
+                    the list, which
+                    can be written as a list of comma-separated values (items) between square brackets. Lists might contain
+                    items of
+                    different types, but usually the items all have the same type.
+                    <code> </code>
+            </article>
+        </section>
 
-    <section class="main-section" id="Lists">
-        <header>Lists</header>
-        <article>
-            <p>Python knows a number of compound data types, used to group together other values. The most versatile is
-                the list, which
-                can be written as a list of comma-separated values (items) between square brackets. Lists might contain
-                items of
-                different types, but usually the items all have the same type.
-                <code> </code>
-        </article>
-    </section>
+        <section class="main-section" id="Loops">
+            <header>Loops</header>
+            <article>
+                <p>
+            </article>
+        </section>
 
-    <section class="main-section" id="Loops">
-        <header>Loops</header>
-        <article>
-            <p>
-        </article>
-    </section>
+        <section class="main-section" id="Conditionals">
+            <header>Conditionals</header>
+            <article>
+                <p>
+            </article>
+        </section>
 
-    <section class="main-section" id="Conditionals">
-        <header>Conditionals</header>
-        <article>
-            <p>
-        </article>
-    </section>
+        <section class="main-section" id="Dictionaries">
+            <header>Dictionaries</header>
+            <article>
+                <p>
+            </article>
+        </section>
 
-    <section class="main-section" id="Dictionaries">
-        <header>Dictionaries</header>
-        <article>
-            <p>
-        </article>
-    </section>
+        <section class="main-section" id="Defining_Functions">
+            <header>Defining Functions</header>
+            <article>
+                <p>
+            </article>
+        </section>
 
-    <section class="main-section" id="Defining_Functions">
-        <header>Defining Functions</header>
-        <article>
-            <p>
-        </article>
-    </section>
+        <section class="main-section" id="References">
+            <header>References</header>
+            <p>All the documentation in this page is taken from <a
+                    href="https://docs.python.org/3/tutorial/index.html">Python Docs</a></p>
+        </section>
+    </main>
 
-    <section class="main-section" id="References">
-        <header>References</header>
-        <p>All the documentation in this page is taken from <a
-                href="https://docs.python.org/3/tutorial/index.html">Python Docs</a></p>
-    </section>
+</body>
 
-    </body>
-
-    </html>
+</html>
