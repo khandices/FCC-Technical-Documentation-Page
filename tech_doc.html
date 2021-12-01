@@ -68,7 +68,7 @@
                 <ul>
                     <li> Float </li>
                     <code> x = 4.73 </code>
-                    <li> Intergers</li>
+                    <li> Integers</li>
                     <code> x = 8 </code>
                     <li> String</li>
                     <code> x = "Cat" </code>
@@ -163,7 +163,30 @@
         <section class="main-section" id="Loops">
             <header>Loops</header>
             <article>
+                <p>In Python there are two types of loops: for loops and while loops. Loops are utilized to iterate through elements such as lists or dictionaries to find a spceific element within that structure.
+                <br>
+                A <b>for loop</b> loops over every element within an element such as a list or dictionary. The syntax for a <b>for loop</b> is below:
+                <code>
+                for element in list:<br>
+                    print(element)
+                </code>
+                A for loop will stop running based on the length of the list given. For lists tend to be used for this reason, they typically have a finite end to the loop iteration. It is important to not that the for loop's <b>body</b> needs to be indented one level deeper than the for loop statement.
+                </p>
                 <p>
+                A <b>while loop</b>, also known as an infinite loop or endless loop, is a loop that runs over and over and does not terminate. In order to prevent a while loop from iterating for eternity, a condition has to be given to the loop. In other words: a while loop runs <b>while</b> the condition runs <b>true</b>. Once the condition is no longer true, the while loop will terminate the iteration. The syntax for a while loop is below:
+                <code>
+                    while condition_true:
+                        print("Hello, still in the loop!")
+                </code>
+                Here is a code snippet with actual variables to show how while loops require a condition:
+                <code>
+                    counter = 0<br>
+                    while counter <= 5:<br>
+                    print(f"Currently at number {counter}.")<br>
+                    counter += 1
+                </code>
+                In the example above, the counter will be increased by one each time the loop runs. Once the counter integer equals 5, the while loop will terminate because the statement is no longer true. 
+                </p>
             </article>
         </section>
 
